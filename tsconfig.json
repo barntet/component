@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": true, // 生成相关的 '.d.ts' 文件
+    "declarationDir": "./dist/types", // '.d.ts' 文件输出目录
+    "jsx": "preserve"
+  },
+  "include": [
+    "./**/*.*",
+    "./shims-vue.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "esModuleInterop": true, // es模块互操作性， 
+  "allowSyntheticDefaultImports": "true" // 允许合成默认导入， 本选项不会影响 TypeScript 生成的 JavaScript，它仅对类型检查起作用。当你使用 Babel 生成额外的默认导出，从而使模块的默认导出更易用时，本选项可以让 TypeScript 的行为与 Babel 一致。
+}

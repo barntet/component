@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../dist//assets/entry.617e863c.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1> esm single button </h1>
+
+  <div id="app"></div>
+  <script type="module">
+    import { createApp } from 'vue/dist/vue.esm-bundler.js';
+    import { XButton, SFCButton, JSXButton } from '../../dist/my-ui.esm.js'
+
+    createApp({
+      template: `<XButton>button</XButton> <SFCButton /> <JSXButton />`
+    })
+      .component(XButton.name, XButton)
+      .component(SFCButton.name, SFCButton)
+      .component(JSXButton.name, JSXButton).mount('#app')
+  </script>
+</body>
+
+</html>
