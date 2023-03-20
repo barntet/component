@@ -5,7 +5,7 @@ import XButton from './button';
 import SFCButton from './SFCButton.vue';
 import JSXButton from './JSXButton';
 
-const btn = ({
+const btn = {
   template: `
   <div>
     <XButton color="blue" icon='search'>蓝色按钮</XButton>
@@ -14,7 +14,8 @@ const btn = ({
     <XButton color="yellow" icon='message'>蓝色按钮</XButton>
     <XButton color="red" icon='delete'>红色按钮</XButton>
   </div>
-`})
+`,
+};
 
 const app = createApp(btn).component('XButton', XButton).mount('#app');
 

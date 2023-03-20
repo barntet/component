@@ -1,7 +1,7 @@
-import { App } from "vue";
-import XButton from "./button";
-import SFCButton from "./SFCButton.vue";
-import JSXButton from "./JSXButton";
+import { App } from 'vue';
+import XButton from './button';
+import SFCButton from './SFCButton.vue';
+import JSXButton from './JSXButton';
 
 // 导出单独组件
 export { XButton, SFCButton, JSXButton };

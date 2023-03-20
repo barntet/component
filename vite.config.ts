@@ -30,7 +30,10 @@ export default defineConfig({
   //  添加库模式配置
   build: {
     rollupOptions,
-    minify: false,
+    // minify: false, // 是否混淆，可以选择工具 terser和esbuild，选择较老的terser，因为rollup一开始也是用terser
+    minify: 'terser', // 是否混淆，可以选择工具 terser和esbuild，选择较老的terser，因为rollup一开始也是用terser
+    sourcemap: true, // 是否单独输出source文件
+    brotliSize: true, // 生成压缩大小报告
     cssCodeSplit: true, // 决定编译时是否独立输出css
     lib: {
       entry: './src/entry.ts',
