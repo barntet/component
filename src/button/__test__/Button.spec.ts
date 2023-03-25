@@ -33,8 +33,8 @@ describe('color', () => {
     expect(
       wrapper
         .classes()
-        .map((v) => v.replace('\n', ''))
-        .includes('bg-blue-500')
+        .map(v => v.replace('\n', ''))
+        .includes('bg-blue-500'),
     ).toBe(true);
   });
 
@@ -50,8 +50,8 @@ describe('color', () => {
     expect(
       wrapper
         .classes()
-        .map((v) => v.replace('\n', ''))
-        .includes('bg-red-500')
+        .map(v => v.replace('\n', ''))
+        .includes('bg-red-500'),
     ).toBe(true);
   });
 });
