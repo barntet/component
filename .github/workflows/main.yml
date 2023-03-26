@@ -16,6 +16,10 @@ jobs:
       - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
         with:
           version: 6.x.x
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - name: Install modules
         run: pnpm install
       - name: Run Lint
@@ -31,6 +35,10 @@ jobs:
       - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
         with:
           version: 6.x.x
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - name: Install modules
         run: pnpm install
       - name: Run Test
